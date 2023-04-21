@@ -1,0 +1,558 @@
+Started GET "/" for ::1 at 2023-04-20 17:38:53 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 932)
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7820)
+
+
+Started GET "/dados" for ::1 at 2023-04-20 18:06:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-04-20 18:06:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:05:12 -0300
+Processing by SelicController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 19514)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/favicon.ico" for ::1 at 2023-04-21 00:05:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:07:40 -0300
+Processing by SelicController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 309)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/selic" for ::1 at 2023-04-21 00:08:01 -0300
+Processing by SelicController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 214)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/selic" for ::1 at 2023-04-21 00:22:19 -0300
+Processing by SelicController#index as */*
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 19532)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/selic" for ::1 at 2023-04-21 00:31:14 -0300
+Processing by SelicController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 353)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/selic" for ::1 at 2023-04-21 00:32:36 -0300
+Processing by SelicController#index as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 214)
+
+
+  
+Redis::WrongTypeError (WRONGTYPE Operation against a key holding the wrong kind of value):
+  
+app/controllers/selic_controller.rb:11:in `block in index'
+app/controllers/selic_controller.rb:10:in `each'
+app/controllers/selic_controller.rb:10:in `index'
+Started GET "/selic" for ::1 at 2023-04-21 00:35:20 -0300
+Processing by SelicController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 315)
+
+
+Started GET "/selic" for ::1 at 2023-04-21 00:35:22 -0300
+Processing by SelicController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 99)
+
+
+Started GET "/selic" for ::1 at 2023-04-21 00:36:30 -0300
+  
+ActionController::RoutingError (uninitialized constant SelicController
+Did you mean?  SelicWorker):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:37:23 -0300
+  
+ActionController::RoutingError (uninitialized constant SelicController
+Did you mean?  SelicWorker):
+  
+Started GET "/dados" for ::1 at 2023-04-21 00:37:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/sidekiq" for ::1 at 2023-04-21 00:44:34 -0300
+  
+RuntimeError (Sidekiq::Web needs a valid Rack session for CSRF protection. If this is a Rails app,
+make sure you mount Sidekiq::Web *inside* your application routes:
+
+
+Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiq"
+  ....
+end
+
+
+If this is a Rails app in API mode, you need to enable sessions.
+
+  https://guides.rubyonrails.org/api_app.html#using-session-middlewares
+
+If this is a bare Rack app, use a session middleware before Sidekiq::Web:
+
+  # first, use IRB to create a shared secret key for sessions and commit it
+  require 'securerandom'; File.open(".session.key", "w") {|f| f.write(SecureRandom.hex(32)) }
+
+  # now use the secret with a session cookie middleware
+  use Rack::Session::Cookie, secret: File.read(".session.key"), same_site: true, max_age: 86400
+  run Sidekiq::Web
+
+):
+  
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:69:in `session'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:49:in `admit'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:41:in `call'
+rack (2.2.6.4) lib/rack/static.rb:161:in `call'
+rack (2.2.6.4) lib/rack/builder.rb:244:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:105:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sidekiq" for ::1 at 2023-04-21 00:45:29 -0300
+  
+RuntimeError (Sidekiq::Web needs a valid Rack session for CSRF protection. If this is a Rails app,
+make sure you mount Sidekiq::Web *inside* your application routes:
+
+
+Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiq"
+  ....
+end
+
+
+If this is a Rails app in API mode, you need to enable sessions.
+
+  https://guides.rubyonrails.org/api_app.html#using-session-middlewares
+
+If this is a bare Rack app, use a session middleware before Sidekiq::Web:
+
+  # first, use IRB to create a shared secret key for sessions and commit it
+  require 'securerandom'; File.open(".session.key", "w") {|f| f.write(SecureRandom.hex(32)) }
+
+  # now use the secret with a session cookie middleware
+  use Rack::Session::Cookie, secret: File.read(".session.key"), same_site: true, max_age: 86400
+  run Sidekiq::Web
+
+):
+  
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:69:in `session'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:49:in `admit'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:41:in `call'
+rack (2.2.6.4) lib/rack/static.rb:161:in `call'
+rack (2.2.6.4) lib/rack/builder.rb:244:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:105:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados" for ::1 at 2023-04-21 00:47:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/sidekiq" for ::1 at 2023-04-21 00:47:11 -0300
+  
+RuntimeError (Sidekiq::Web needs a valid Rack session for CSRF protection. If this is a Rails app,
+make sure you mount Sidekiq::Web *inside* your application routes:
+
+
+Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiq"
+  ....
+end
+
+
+If this is a Rails app in API mode, you need to enable sessions.
+
+  https://guides.rubyonrails.org/api_app.html#using-session-middlewares
+
+If this is a bare Rack app, use a session middleware before Sidekiq::Web:
+
+  # first, use IRB to create a shared secret key for sessions and commit it
+  require 'securerandom'; File.open(".session.key", "w") {|f| f.write(SecureRandom.hex(32)) }
+
+  # now use the secret with a session cookie middleware
+  use Rack::Session::Cookie, secret: File.read(".session.key"), same_site: true, max_age: 86400
+  run Sidekiq::Web
+
+):
+  
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:69:in `session'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:49:in `admit'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:41:in `call'
+rack (2.2.6.4) lib/rack/static.rb:161:in `call'
+rack (2.2.6.4) lib/rack/builder.rb:244:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:105:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sidekiq" for ::1 at 2023-04-21 00:47:15 -0300
+  
+RuntimeError (Sidekiq::Web needs a valid Rack session for CSRF protection. If this is a Rails app,
+make sure you mount Sidekiq::Web *inside* your application routes:
+
+
+Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiq"
+  ....
+end
+
+
+If this is a Rails app in API mode, you need to enable sessions.
+
+  https://guides.rubyonrails.org/api_app.html#using-session-middlewares
+
+If this is a bare Rack app, use a session middleware before Sidekiq::Web:
+
+  # first, use IRB to create a shared secret key for sessions and commit it
+  require 'securerandom'; File.open(".session.key", "w") {|f| f.write(SecureRandom.hex(32)) }
+
+  # now use the secret with a session cookie middleware
+  use Rack::Session::Cookie, secret: File.read(".session.key"), same_site: true, max_age: 86400
+  run Sidekiq::Web
+
+):
+  
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:69:in `session'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:49:in `admit'
+sidekiq (7.0.9) lib/sidekiq/web/csrf_protection.rb:41:in `call'
+rack (2.2.6.4) lib/rack/static.rb:161:in `call'
+rack (2.2.6.4) lib/rack/builder.rb:244:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:105:in `call'
+sidekiq (7.0.9) lib/sidekiq/web.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (7.0.4.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados" for ::1 at 2023-04-21 00:49:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados" for ::1 at 2023-04-21 00:49:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:49:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/selic"):
+  
+Started GET "/sidekiq" for ::1 at 2023-04-21 00:49:47 -0300
+Started GET "/sidekiq/stylesheets/bootstrap.css" for ::1 at 2023-04-21 00:49:47 -0300
+Started GET "/sidekiq/stylesheets/application.css" for ::1 at 2023-04-21 00:49:47 -0300
+Started GET "/sidekiq/javascripts/application.js" for ::1 at 2023-04-21 00:49:47 -0300
+Started GET "/sidekiq/javascripts/chart.min.js" for ::1 at 2023-04-21 00:49:47 -0300
+Started GET "/sidekiq/javascripts/chartjs-plugin-annotation.min.js" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/javascripts/dashboard-charts.js" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/javascripts/dashboard.js" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/stylesheets/application-dark.css" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/images/status.png" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/javascripts/base-charts.js" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/images/favicon.ico" for ::1 at 2023-04-21 00:49:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:49:53 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:49:58 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:03 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:08 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:13 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:18 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:23 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:28 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:33 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:38 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:43 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:53 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:50:58 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:03 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:08 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:13 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:18 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:23 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:28 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:33 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:38 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:43 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:53 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:51:58 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:03 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:08 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:13 -0300
+  
+SyntaxError (/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:9: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+  aplicação, para que ele possa herdar as configur...
+                    ^~~
+/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:10: syntax error, unexpected `end'):
+  
+config/routes.rb:9: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected `end'
+config/routes.rb:9: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected `end'
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:18 -0300
+  
+SyntaxError (/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:9: unterminated regexp meets end of file
+/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:9: regexp encoding option 'n' differs from source encoding 'UTF-8'
+/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:9: /.../n has a non escaped non ASCII character in non ASCII-8BIT script: /de sess\u00E3o da aplica\u00E7\u00E3o. Por exemplo:
+end/m
+/home/andre/Documentos/Rails/BACEN_API/config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:9: unterminated regexp meets end of file
+config/routes.rb:9: regexp encoding option 'n' differs from source encoding 'UTF-8'
+config/routes.rb:9: /.../n has a non escaped non ASCII character in non ASCII-8BIT script: /de sess\u00E3o da aplica\u00E7\u00E3o. Por exemplo:
+config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:9: unterminated regexp meets end of file
+config/routes.rb:9: regexp encoding option 'n' differs from source encoding 'UTF-8'
+config/routes.rb:9: /.../n has a non escaped non ASCII character in non ASCII-8BIT script: /de sess\u00E3o da aplica\u00E7\u00E3o. Por exemplo:
+config/routes.rb:9: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:23 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:28 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:33 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:38 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:43 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:53 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:52:58 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 00:53:03 -0300
+Started GET "/dados" for ::1 at 2023-04-21 00:53:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:57:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/selic"):
+  
+Started GET "/selic" for ::1 at 2023-04-21 00:57:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/selic"):
+  
+Started GET "/api/bcb/dados'" for ::1 at 2023-04-21 00:57:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/bcb/dados'"):
+  
+Started GET "/api/bcb/dados" for ::1 at 2023-04-21 00:57:59 -0300
+  
+ActionController::RoutingError (uninitialized constant ApiController
+Did you mean?  ApplicationController):
+  
+Started GET "/dados" for ::1 at 2023-04-21 01:02:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados" for ::1 at 2023-04-21 01:02:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/sidekiq" for ::1 at 2023-04-21 01:03:04 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:04 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:09 -0300
+Started GET "/sidekiq/busy" for ::1 at 2023-04-21 01:03:14 -0300
+Started GET "/sidekiq/queues" for ::1 at 2023-04-21 01:03:15 -0300
+Started GET "/sidekiq/retries" for ::1 at 2023-04-21 01:03:17 -0300
+Started GET "/sidekiq/scheduled" for ::1 at 2023-04-21 01:03:18 -0300
+Started GET "/sidekiq/scheduled" for ::1 at 2023-04-21 01:03:19 -0300
+Started GET "/sidekiq/morgue" for ::1 at 2023-04-21 01:03:20 -0300
+Started GET "/sidekiq/metrics" for ::1 at 2023-04-21 01:03:21 -0300
+Started GET "/sidekiq/javascripts/metrics.js" for ::1 at 2023-04-21 01:03:21 -0300
+Started GET "/sidekiq/" for ::1 at 2023-04-21 01:03:22 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:22 -0300
+Started GET "/sidekiq/" for ::1 at 2023-04-21 01:03:23 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:23 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:28 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:33 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:38 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:43 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:48 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:53 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:03:58 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:03 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:08 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:13 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:18 -0300
+Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:23 -0300
