@@ -1,0 +1,6 @@
+---
+pt-BR:
+  launch:
+    async_import_running: Executando importação de launchers de forma assíncrona
+    import_running: REST Back-end Challenge 20201209 Running
+    not_found: O Launcher não foi encontrado
