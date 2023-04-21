@@ -2,17 +2,22 @@ require 'httparty'
 
 class ApiService
   include HTTParty
-  
-  base_uri 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.11'
-  default_params format: 'json'
-  
-  def self.busca_dados
-    response = get('/dados')
-    response.parsed_response
+
+  base_uri 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.'
+
+  def self.busca_dados(codigo_serie)
+    response = get("#{codigo_serie}/dados?formato=json")
+    dados = response.parsed_response
+
+    # Armazena os dados no Redis
+    $redis.set(codigo_serie, dados.to_json)
+
+    dados
   end
 end
 
 
+# ARQUIVO PRIMARIO
 #A linha de código @dados = ApiService.busca_dados é responsável 
 #por chamar o método busca_dados do serviço ApiService e 
 #armazenar o resultado na variável de instância @dados.
