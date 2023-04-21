@@ -18,7 +18,7 @@ gem "puma", "~> 5.0"
 gem 'httparty'
 
 gem 'redis'
-gem 'sidekiq'
+# gem 'sidekiq'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
