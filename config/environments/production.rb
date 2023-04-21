@@ -56,7 +56,10 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "BACEN_API_production"
 
   config.action_mailer.perform_caching = false
-  config.assets.compile = true
+  config.assets.compile = false
+
+  config.hosts << "rails-production-71a4.up.railway.app"
+  
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
