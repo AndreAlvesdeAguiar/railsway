@@ -556,3 +556,169 @@ Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:08 -0300
 Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:13 -0300
 Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:18 -0300
 Started GET "/sidekiq/stats" for ::1 at 2023-04-21 01:04:23 -0300
+Started GET "/dados/20542" for ::1 at 2023-04-21 13:16:30 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20542"}
+Completed 404 Not Found in 15ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 19527)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-04-21 13:16:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/11" for ::1 at 2023-04-21 13:16:35 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 202)
+
+
+Started GET "/dados/11" for ::1 at 2023-04-21 13:18:50 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 211ms (Views: 177.2ms | ActiveRecord: 0.0ms | Allocations: 240492)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-21 13:18:57 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started GET "/dados/257" for ::1 at 2023-04-21 13:19:09 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"257"}
+Completed 404 Not Found in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/dados/2579" for ::1 at 2023-04-21 13:19:13 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"2579"}
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-21 13:19:18 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 101)
+
+
+Started GET "/dados/11" for ::1 at 2023-04-21 13:19:21 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 113ms (Views: 101.8ms | ActiveRecord: 0.0ms | Allocations: 240476)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-21 13:23:52 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 99)
+
+
+Started GET "/dados/2563" for ::1 at 2023-04-21 13:24:06 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"2563"}
+Completed 404 Not Found in 0ms (Views: 0.2ms | Allocations: 110)
+
+
+Started GET "/dados/2563" for ::1 at 2023-04-21 13:24:09 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"2563"}
+Completed 404 Not Found in 1ms (Views: 0.1ms | Allocations: 110)
+
+
+Started GET "/dados/11" for ::1 at 2023-04-21 13:36:25 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 111ms (Views: 96.6ms | Allocations: 240476)
+
+
+Started GET "/dados/11" for ::1 at 2023-04-21 13:39:37 -0300
+  
+Zeitwerk::NameError (expected file /home/andre/Documentos/Rails_local/app/controllers/dados_controller.rb to define constant DadosController, but didn't):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.3) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.3) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.3) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados/11" for ::1 at 2023-04-21 13:44:04 -0300
+  
+ActionController::RoutingError (uninitialized constant DadosController):
+  
+Started GET "/dados/11" for ::1 at 2023-04-21 13:44:16 -0300
+  
+ActionController::RoutingError (uninitialized constant DadosController):
+  
+Started GET "/dados/11" for ::1 at 2023-04-21 13:45:48 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 122ms (Views: 111.6ms | Allocations: 240636)
+
+
+Started GET "/" for ::1 at 2023-04-22 16:11:47 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 826)
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 6600)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-22 16:11:52 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 453)
+
+
