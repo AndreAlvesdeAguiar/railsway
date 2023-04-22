@@ -57,8 +57,6 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   config.assets.compile = false
-
-  config.hosts << "rails-production-71a4.up.railway.app"
   
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
