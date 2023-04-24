@@ -8,4 +8,4 @@ app/controllers/dados_controller.rb: Este arquivo contém um controlador chamado
 
 config/initializers/redis.rb: Este arquivo é um inicializador que configura o Redis para ser utilizado pela aplicação Rails. Ele cria uma conexão com o Redis no host localhost e na porta 6379.
 
-config/routes.rb: Este arquivo define as rotas da aplicação Rails. Ele define uma rota que mapeia a URL dados/:codigo_serie para o método index do controlador DadosController. Isso significa que quando um usuário acessa a URL http://localhost:3000/dados/:codigo_serie, o método index do controlador DadosController é chamado para buscar e retornar os dados econômicos correspondentes à série econômica identificada pelo parâmetro codigo_serie.
+config/routes.rb: Este arquivo define as rotas da aplicação Rails. Ele define uma rota que mapeia a URL dados/:codigo_serie para o método index do controlador DadosController. Isso significa que quando um usuário acessa a URL http://localhost:3000/dados/codigo_serie, o método index do controlador DadosController é chamado para buscar e retornar os dados econômicos correspondentes à série econômica identificada pelo parâmetro codigo_serie.
