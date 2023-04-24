@@ -820,3 +820,157 @@ Processing by DadosController#index as HTML
 Completed 200 OK in 537ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 11418)
 
 
+Started GET "/dados/226" for ::1 at 2023-04-24 10:37:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"226"}
+Completed 200 OK in 2030ms (Views: 166.5ms | ActiveRecord: 0.0ms | Allocations: 1267983)
+
+
+Started GET "/dados/:codigo_serie" for ::1 at 2023-04-24 10:39:47 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>":codigo_serie"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 199)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): ":codigo_serie/dados?formato=json"):
+  
+app/services/api_service.rb:9:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 71db-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 71db-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 71db-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 71db-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+Started GET "/dados/226" for ::1 at 2023-04-24 10:44:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"226"}
+Completed 200 OK in 307ms (Views: 268.8ms | ActiveRecord: 0.0ms | Allocations: 444043)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2a92-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2a92-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2a92-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2a92-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 44a8-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 44a8-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 44a8-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 44a8-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: ecc0-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: ecc0-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: ecc0-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: ecc0-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 2125-2804-7f0-6840-33d8-90e0-d3d8-c067-cc26.ngrok-free.app
+Started GET "/" for 2804:7f0:6840:33d8:90e0:d3d8:c067:cc26 at 2023-04-24 11:02:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 826)
+Completed 200 OK in 14ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 6596)
+
+
+Started GET "/dados/11" for 2804:7f0:6840:33d8:90e0:d3d8:c067:cc26 at 2023-04-24 11:02:25 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 210ms (Views: 199.1ms | ActiveRecord: 0.0ms | Allocations: 240855)
+
+
+Started GET "/favicon.ico" for 2804:7f0:6840:33d8:90e0:d3d8:c067:cc26 at 2023-04-24 11:02:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/11" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:02:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 213ms (Views: 190.1ms | ActiveRecord: 0.0ms | Allocations: 259910)
+
+
+Started GET "/dados/11" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:03:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"11"}
+Completed 200 OK in 198ms (Views: 175.9ms | ActiveRecord: 0.0ms | Allocations: 259911)
+
+
+Started GET "/favicon.ico" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:03:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/20740" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:03:46 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20740"}
+Completed 200 OK in 782ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 13443)
+
+
+Started GET "/" for 2804:7f0:6840:33d8:90e0:d3d8:c067:cc26 at 2023-04-24 11:04:32 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 487)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1384)
+
+
+Started GET "/" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:04:46 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 16)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Started GET "/da" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:04:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/da"):
+  
+Started GET "/dados" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:04:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados/" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:04:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados/(codigo)" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:04:53 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"(codigo)"}
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+  
+Encoding::UndefinedConversionError ("\xE9" from ASCII-8BIT to UTF-8):
+  
+app/services/api_service.rb:13:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+Started GET "/dados/(codigo)" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:05:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"(codigo)"}
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms | Allocations: 20856)
+
+
+  
+Encoding::UndefinedConversionError ("\xE9" from ASCII-8BIT to UTF-8):
+  
+app/services/api_service.rb:13:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+Started GET "/dados/" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:05:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados/12" for 2804:7f0:6840:33d8:90e0:d3d8:c067:cc26 at 2023-04-24 11:05:40 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 151ms (Views: 134.9ms | ActiveRecord: 0.0ms | Allocations: 241589)
+
+
+Started GET "/dados/12" for 2804:18:10c7:a058:6861:e03a:446d:6e07 at 2023-04-24 11:08:01 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 100ms (Views: 87.6ms | ActiveRecord: 0.0ms | Allocations: 241572)
+
+
