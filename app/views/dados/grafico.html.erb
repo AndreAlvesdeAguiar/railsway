@@ -1,0 +1,24 @@
+<h1>Meu Gráfico</h1>
+
+<div>
+  <canvas id="meu-grafico"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  var ctx = document.getElementById('meu-grafico').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: <%= @dados_grafico.to_json.html_safe %>,
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>

@@ -974,3 +974,1752 @@ Processing by DadosController#index as HTML
 Completed 200 OK in 100ms (Views: 87.6ms | ActiveRecord: 0.0ms | Allocations: 241572)
 
 
+Started GET "/" for ::1 at 2023-04-24 12:05:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 826)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 6596)
+
+
+Started GET "/dados/1370" for ::1 at 2023-04-24 12:05:28 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"1370"}
+Completed 200 OK in 328ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 15370)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:10:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 213ms (Views: 190.5ms | ActiveRecord: 0.0ms | Allocations: 261001)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:10:46 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 109ms (Views: 98.5ms | ActiveRecord: 0.0ms | Allocations: 241590)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:11:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 208ms (Views: 187.2ms | ActiveRecord: 0.0ms | Allocations: 261001)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:14:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 211ms (Views: 189.4ms | ActiveRecord: 0.0ms | Allocations: 260999)
+
+
+Started GET "/dados/12/graficos" for ::1 at 2023-04-24 12:14:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados/12/graficos"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:14:52 -0300
+  
+AbstractController::ActionNotFound (The action 'grafico' could not be found for DadosController):
+  
+actionpack (7.0.4.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:15:42 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 46675)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:21:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/andre/Documentos/Rails_local/app/controllers/dados_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/dados_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/dados_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:21:14 -0300
+  
+SyntaxError (/home/andre/Documentos/Rails_local/app/controllers/dados_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/dados_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/dados_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:21:26 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 190ms (Views: 129.3ms | Allocations: 241997)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:21:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65901)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:26:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19459)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:26:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19459)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:26:54 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 104)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:27:11 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 84)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:27:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 32ms (Allocations: 48430)
+
+
+  
+NoMethodError (undefined method `plain' for #<DadosController:0x0000000000c738>):
+  
+app/controllers/dados_controller.rb:30:in `grafico'
+Started GET "/dados/12" for ::1 at 2023-04-24 12:27:46 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 271ms (Views: 185.7ms | Allocations: 241694)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:27:51 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 14ms (Allocations: 48271)
+
+
+  
+NoMethodError (undefined method `plain' for #<DadosController:0x0000000000c9b8>):
+  
+app/controllers/dados_controller.rb:30:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:28:01 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | Allocations: 46662)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:30:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 67574)
+
+
+  
+NoMethodError (undefined method `plain' for #<DadosController:0x00000000008d68>):
+  
+app/controllers/dados_controller.rb:29:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:30:26 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 30ms (Views: 0.2ms | Allocations: 46669)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:31:01 -0300
+  
+SyntaxError (/home/andre/Documentos/Rails_local/app/controllers/dados_controller.rb:29: syntax error, unexpected local variable or method, expecting `end'
+    render :/dados/index
+             ^~~~~
+):
+  
+app/controllers/dados_controller.rb:29: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/dados_controller.rb:29: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:33:08 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 14ms (Views: 0.2ms | Allocations: 46739)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:33:18 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 201ms (Views: 164.3ms | Allocations: 241590)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:33:23 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.1ms | Allocations: 46522)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:34:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65902)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:36:38 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 49ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 46542)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:44:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65900)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:44:36 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 46543)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:45:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 65905)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:45:31 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 46544)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:45:34 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 46521)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:45:40 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 57ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 46523)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:46:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 234ms (Views: 180.0ms | ActiveRecord: 0.0ms | Allocations: 307582)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/dados_controller.rb:29:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:46:47 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 10ms (Views: 0.3ms | Allocations: 46673)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+rack (2.2.6.4) lib/rack/etag.rb:71:in `<<'
+rack (2.2.6.4) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.4.3) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.4.3) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.6.4) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.6.4) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.6.4) lib/rack/etag.rb:33:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:46:54 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 12ms (Allocations: 48421)
+
+
+  
+NoMethodError (undefined method `plain' for #<DadosController:0x00000000010180>):
+  
+app/controllers/dados_controller.rb:29:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:47:02 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 7ms (Views: 0.2ms | Allocations: 46660)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:47:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65899)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:48:05 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.2ms | Allocations: 46667)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:48:10 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 231ms (Views: 206.6ms | Allocations: 241588)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:48:20 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 113ms (Views: 102.6ms | Allocations: 241728)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:48:25 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 8ms (Views: 0.2ms | Allocations: 46528)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:48:45 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.1ms | Allocations: 46660)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:48:48 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 117ms (Views: 104.3ms | Allocations: 241575)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:52:19 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 155ms (Views: 143.1ms | Allocations: 241734)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:52:23 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 33ms (Views: 0.1ms | Allocations: 46524)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:56:03 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 17ms (Views: 0.5ms | Allocations: 46658)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:56:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65902)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:56:15 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 35ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 46542)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:56:31 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 46523)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:58:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65904)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 12:58:50 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 258ms (Views: 225.2ms | ActiveRecord: 0.0ms | Allocations: 241607)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 12:58:56 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 46523)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:00:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Started GET "/dados/12" for ::1 at 2023-04-24 13:00:56 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 232ms (Views: 216.3ms | Allocations: 241728)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:52:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:53:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 65899)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-04-24 13:53:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:53:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 65897)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:54:56 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 15ms (Views: 0.2ms | Allocations: 46664)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:55:11 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 16ms (Views: 0.1ms | Allocations: 46524)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:56:00 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 18ms (Views: 0.2ms | Allocations: 46521)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:57:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 47ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 65899)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 13:59:03 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 19ms (Views: 0.3ms | Allocations: 46668)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:01:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 54ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 65906)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 14:06:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 213ms (Views: 189.5ms | ActiveRecord: 0.0ms | Allocations: 261001)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-04-24 14:06:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:06:16 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 46608)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:06:35 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 164)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:06:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19259)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:07:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 21053)
+
+
+  
+NameError (undefined local variable or method `dados_json' for #<DadosController:0x00000000008d68>):
+  
+app/controllers/dados_controller.rb:17:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:07:38 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 201ms (Views: 192.0ms | Allocations: 241971)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:09:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19259)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:10:07 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 72)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:10:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dados/12/grafico"):
+  
+Started GET "/dados/grafico" for ::1 at 2023-04-24 14:10:55 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"grafico"}
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms | Allocations: 1883)
+
+
+  
+Encoding::UndefinedConversionError ("\xE9" from ASCII-8BIT to UTF-8):
+  
+app/services/api_service.rb:13:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:11:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19254)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:11:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19254)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:13:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19259)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:18:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19255)
+
+
+Started GET "/dados/12/grafico" for 127.0.0.1 at 2023-04-24 14:18:30 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 72)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-04-24 14:18:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:23:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19255)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:23:41 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 94)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:24:16 -0300
+  
+SyntaxError (/home/andre/Documentos/Rails_local/config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:24:24 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 162)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 14:24:40 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 208ms (Views: 184.1ms | Allocations: 241757)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 14:27:22 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 212ms (Views: 181.3ms | Allocations: 241880)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:27:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 63)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:27:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19254)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:27:52 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 72)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:28:14 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 58)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:28:26 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 58)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:28:43 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:31:36 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/dados/12/show" for ::1 at 2023-04-24 14:32:58 -0300
+Processing by DadosController#show as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 163)
+
+
+Started GET "/dados/12/show" for ::1 at 2023-04-24 14:33:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#show as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19259)
+
+
+Started GET "/dados/12/show" for ::1 at 2023-04-24 14:33:33 -0300
+Processing by DadosController#show as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 165)
+
+
+Started GET "/dados/12/show" for ::1 at 2023-04-24 14:33:35 -0300
+Processing by DadosController#show as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 0ms (Views: 0.1ms | Allocations: 60)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 14:33:38 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 208ms (Views: 173.5ms | Allocations: 241757)
+
+
+Started GET "/dados/show" for ::1 at 2023-04-24 14:33:57 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"show"}
+Completed 500 Internal Server Error in 229ms (Allocations: 1705)
+
+
+  
+Encoding::UndefinedConversionError ("\xE9" from ASCII-8BIT to UTF-8):
+  
+app/services/api_service.rb:13:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+Started GET "/dados/show" for ::1 at 2023-04-24 14:34:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"show"}
+Completed 200 OK in 183ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 21153)
+
+
+Started GET "/dados/show" for ::1 at 2023-04-24 14:35:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"show"}
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 19472)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:35:43 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 31ms (Views: 0.2ms | Allocations: 46678)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:36:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 65906)
+
+
+Started GET "/dados/12" for ::1 at 2023-04-24 14:36:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 212ms (Views: 185.6ms | ActiveRecord: 0.0ms | Allocations: 261010)
+
+
+Started GET "/dados/17" for ::1 at 2023-04-24 14:36:44 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 1485ms (Views: 73.2ms | ActiveRecord: 0.0ms | Allocations: 612507)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:36:51 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 41867)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:37:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 61214)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:39:11 -0300
+  
+Zeitwerk::NameError (expected file /home/andre/Documentos/Rails_local/app/controllers/dados_controller.rb to define constant DadosController, but didn't):
+  
+zeitwerk (2.6.7) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.7) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.3) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.3) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.3) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.3) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.3) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:40:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'grafico' could not be found for DadosController):
+  
+actionpack (7.0.4.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dados/17" for ::1 at 2023-04-24 14:41:41 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 208ms (Views: 174.6ms | ActiveRecord: 0.0ms | Allocations: 242671)
+
+
+Started GET "/dados/17" for ::1 at 2023-04-24 14:42:24 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 94ms (Views: 85.5ms | Allocations: 217344)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:43:08 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 204 No Content in 0ms (Allocations: 106)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 14:43:13 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 204 No Content in 0ms (Allocations: 28)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:43:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 204 No Content in 10ms (ActiveRecord: 0.0ms | Allocations: 19117)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:43:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 44)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:47:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 67712)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<DadosController:0x00000000008d68>
+Did you mean?  respond_to?):
+  
+app/controllers/dados_controller.rb:42:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:50:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 67717)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<DadosController:0x00000000008d68>
+Did you mean?  respond_to?):
+  
+app/controllers/dados_controller.rb:42:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:52:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 67716)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<DadosController:0x00000000008d40>
+Did you mean?  respond_to?):
+  
+app/controllers/dados_controller.rb:42:in `grafico'
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:53:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.9ms | Allocations: 460)
+Completed 200 OK in 27ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 53114)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:54:00 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 130.5ms | Allocations: 93211)
+Completed 200 OK in 160ms (Views: 132.0ms | Allocations: 143692)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:54:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 61.4ms | Allocations: 93539)
+Completed 200 OK in 85ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 146200)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:54:16 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 46.8ms | Allocations: 92951)
+Completed 200 OK in 59ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 139851)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:54:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.9ms | Allocations: 465)
+Completed 200 OK in 22ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 53123)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:55:29 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 43.8ms | Allocations: 93187)
+Completed 200 OK in 143ms (Views: 45.2ms | ActiveRecord: 0.0ms | Allocations: 140797)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:57:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 16.5ms | Allocations: 4210)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 56831)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000008cc8>
+Did you mean?  javascript_path
+               javascript_tag):
+    1: <head>
+    2:   <title>Gráfico</title>
+    3:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    4:   <%= csrf_meta_tags %>
+    5: 
+    6:   <!-- Adicione as linhas abaixo -->
+  
+app/views/dados/grafico.html.erb:3
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:57:32 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 17.5ms | Allocations: 3188)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms | Allocations: 50803)
+
+
+  
+ActionView::Template::Error (undefined method `stylesheet_pack_tag' for #<ActionView::Base:0x00000000008e80>
+Did you mean?  stylesheet_path
+               stylesheet_link_tag):
+    3:   <%= csrf_meta_tags %>
+    4: 
+    5:   <!-- Adicione as linhas abaixo -->
+    6:   <%= stylesheet_pack_tag 'application' %>
+    7:   <%= javascript_pack_tag 'application' %>
+    8: </head>
+  
+app/views/dados/grafico.html.erb:6
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:57:40 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 21.2ms | Allocations: 3153)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 50759)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009038>
+Did you mean?  javascript_path
+               javascript_tag):
+    3:   <%= csrf_meta_tags %>
+    4: 
+    5:   <!-- Adicione as linhas abaixo -->
+    6:   <%= javascript_pack_tag 'application' %>
+    7: </head>
+  
+app/views/dados/grafico.html.erb:6
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:57:45 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 2.3ms | Allocations: 326)
+Completed 200 OK in 28ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 47979)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:58:02 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.5ms | Allocations: 150)
+Completed 200 OK in 17ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 47803)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 14:58:29 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 118.5ms | Allocations: 93204)
+Completed 200 OK in 169ms (Views: 120.1ms | ActiveRecord: 0.0ms | Allocations: 140882)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:01:35 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 57ms (Views: 46.8ms | Allocations: 139644)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:01:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 79ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 142562)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:02:08 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 149ms (Views: 49.6ms | ActiveRecord: 0.0ms | Allocations: 139552)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:06:20 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 66ms (Views: 49.6ms | Allocations: 139537)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:06:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 64ms (Views: 44.9ms | Allocations: 139540)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:07:24 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 54ms (Views: 42.5ms | Allocations: 139538)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:09:22 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.5ms | Allocations: 177)
+Completed 200 OK in 14ms (Views: 2.2ms | Allocations: 47800)
+
+
+Started GET "/dados/12/meu-grafico.js" for ::1 at 2023-04-24 15:09:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados/12/meu-grafico.js"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:11:56 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.5ms | Allocations: 176)
+Completed 200 OK in 17ms (Views: 2.2ms | Allocations: 47759)
+
+
+Started GET "/dados/12/meu-grafico.js" for ::1 at 2023-04-24 15:11:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados/12/meu-grafico.js"):
+  
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:12:17 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.6ms | Allocations: 153)
+Completed 200 OK in 13ms (Views: 2.5ms | Allocations: 47768)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:12:28 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.7ms | Allocations: 324)
+Completed 200 OK in 18ms (Views: 2.7ms | Allocations: 47896)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 15:13:41 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.6ms | Allocations: 324)
+Completed 200 OK in 17ms (Views: 2.2ms | Allocations: 43208)
+
+
+Started GET "/dados/226/grafico" for ::1 at 2023-04-24 15:14:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"226"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 43ms (Views: 0.9ms | Allocations: 84273)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:14:34 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 935)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:14:39 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 3345)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:14:47 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 3ms (Views: 2.1ms | Allocations: 3332)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:14:53 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 935)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 15:15:47 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.6ms | Allocations: 329)
+Completed 200 OK in 18ms (Views: 2.3ms | Allocations: 43261)
+
+
+Started GET "/dados/17" for ::1 at 2023-04-24 15:15:52 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"17"}
+Completed 200 OK in 95ms (Views: 87.9ms | Allocations: 217283)
+
+
+Started GET "/dados/15" for ::1 at 2023-04-24 15:16:00 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"15"}
+Completed 200 OK in 4197ms (Views: 83.0ms | Allocations: 571271)
+
+
+Started GET "/dados/15/grafico" for ::1 at 2023-04-24 15:16:09 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"15"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 13ms (Views: 0.7ms | Allocations: 39359)
+
+
+Started GET "/dados/15/grafico" for ::1 at 2023-04-24 15:18:46 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"15"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.5ms | Allocations: 351)
+Completed 200 OK in 11ms (Views: 1.9ms | Allocations: 40544)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:18:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 1.4ms | Allocations: 682)
+Completed 200 OK in 25ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 53258)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:19:15 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.6ms | Allocations: 328)
+Completed 200 OK in 44ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 47958)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:19:27 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 46623)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:19:44 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 959)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:20:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 1.1ms | Allocations: 646)
+Completed 200 OK in 11ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 7391)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:22:22 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.6ms | Allocations: 153)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1954)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:22:44 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2026)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:23:01 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 1502)
+
+
+Started GET "/dados_grafico?codigo_serie=11" for ::1 at 2023-04-24 15:23:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados_grafico"):
+  
+Started GET "/dados_grafico?codigo_serie=11" for ::1 at 2023-04-24 15:23:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados_grafico"):
+  
+Started GET "/dados_grafico?codigo_serie=11" for ::1 at 2023-04-24 15:23:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados_grafico"):
+  
+Started GET "/dados_grafico?codigo_serie=11" for ::1 at 2023-04-24 15:23:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados_grafico"):
+  
+Started GET "/dados_grafico?codigo_serie=11" for ::1 at 2023-04-24 15:23:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados_grafico"):
+  
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:23:15 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 1522)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:23:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 1.0ms | Allocations: 646)
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 7391)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:24:07 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3401)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:24:13 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 982)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:26:54 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.9ms | Allocations: 378)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2112)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:26:54 -0300
+Processing by DadosController#index as */*
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3387)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:27:00 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3335)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:27:04 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 958)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 15:27:05 -0300
+Processing by DadosController#index as */*
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 3339)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:27:12 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 2.6ms | Allocations: 379)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 2117)
+
+
+Started GET "/api/dados/25359" for ::1 at 2023-04-24 15:27:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/dados/25359"):
+  
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:27:28 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 0.8ms | Allocations: 323)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2095)
+
+
+Started GET "/dados/25359/grafico" for ::1 at 2023-04-24 15:29:35 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 22.7ms | Allocations: 1562)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 3338)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:29:40 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 50.9ms | Allocations: 92530)
+Completed 200 OK in 69ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 139145)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:30:21 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 44.8ms | Allocations: 93215)
+Completed 200 OK in 96ms (Views: 46.3ms | Allocations: 140858)
+
+
+Started GET "/dados/2563/grafico" for ::1 at 2023-04-24 15:30:26 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"2563"}
+Completed 500 Internal Server Error in 1ms (Allocations: 207)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dados_controller.rb:49:in `grafico'
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 15:30:31 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 35.1ms | Allocations: 83587)
+Completed 200 OK in 53ms (Views: 35.7ms | Allocations: 125727)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:30:35 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 58.5ms | Allocations: 92531)
+Completed 200 OK in 73ms (Views: 59.2ms | Allocations: 139095)
+
+
+Started GET "/dados/1457/grafico" for ::1 at 2023-04-24 15:31:02 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"1457"}
+Completed 500 Internal Server Error in 1ms (Allocations: 160)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dados_controller.rb:49:in `grafico'
+Started GET "/dados/1457" for ::1 at 2023-04-24 15:31:14 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"1457"}
+Completed 200 OK in 612ms (Views: 8.5ms | Allocations: 23078)
+
+
+Started GET "/dados/1457/grafico" for ::1 at 2023-04-24 15:31:23 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"1457"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 1.2ms | Allocations: 2843)
+Completed 200 OK in 3ms (Views: 2.0ms | Allocations: 4595)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:31:47 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 47.0ms | Allocations: 92796)
+Completed 200 OK in 68ms (Views: 48.6ms | Allocations: 140189)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:31:54 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 111.8ms | Allocations: 92950)
+Completed 200 OK in 138ms (Views: 112.5ms | Allocations: 139763)
+
+
+Started GET "/dados/17/grafico" for ::1 at 2023-04-24 15:32:00 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 38.0ms | Allocations: 83570)
+Completed 200 OK in 62ms (Views: 38.8ms | Allocations: 125651)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:32:41 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 43.6ms | Allocations: 92951)
+Completed 200 OK in 58ms (Views: 44.2ms | Allocations: 139727)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:32:45 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 44.7ms | Allocations: 92530)
+Completed 200 OK in 69ms (Views: 45.2ms | Allocations: 139091)
+
+
+Started GET "/dados/118/grafico" for ::1 at 2023-04-24 15:32:48 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"118"}
+Completed 500 Internal Server Error in 1ms (Allocations: 180)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dados_controller.rb:49:in `grafico'
+Started GET "/dados/118" for ::1 at 2023-04-24 15:32:55 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"118"}
+Completed 200 OK in 371ms (Views: 3.6ms | Allocations: 5998)
+
+
+Started GET "/dados/118/grafico" for ::1 at 2023-04-24 15:33:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"118"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 2.3ms | Allocations: 1246)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started GET "/dados/332/grafico" for ::1 at 2023-04-24 15:33:42 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"332"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 220)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dados_controller.rb:19:in `grafico'
+Started GET "/dados/332" for ::1 at 2023-04-24 15:33:45 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"332"}
+Completed 200 OK in 741ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 16892)
+
+
+Started GET "/dados/332/grafico" for ::1 at 2023-04-24 15:33:50 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"332"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 2.4ms | Allocations: 2134)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3526)
+
+
+Started GET "/dados/332/grafico" for ::1 at 2023-04-24 15:34:46 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"332"}
+Completed 500 Internal Server Error in 1ms (Allocations: 710)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/dados_controller.rb:28:in `grafico'
+Started GET "/dados/332/grafico" for ::1 at 2023-04-24 15:35:45 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"332"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 1.4ms | Allocations: 2157)
+Completed 200 OK in 4ms (Views: 2.7ms | Allocations: 4062)
+
+
+Started GET "/dados/554/grafico" for ::1 at 2023-04-24 15:35:49 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"554"}
+Completed 500 Internal Server Error in 1ms (Allocations: 206)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dados_controller.rb:19:in `grafico'
+Started GET "/dados/554/grafico" for ::1 at 2023-04-24 15:37:50 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"554"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 16.4ms | Allocations: 31716)
+Completed 200 OK in 934ms (Views: 17.7ms | Allocations: 198227)
+
+
+Started GET "/dados/898/grafico" for ::1 at 2023-04-24 15:37:55 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"898"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 16.0ms | Allocations: 31700)
+Completed 200 OK in 1345ms (Views: 16.7ms | Allocations: 197427)
+
+
+Started GET "/dados/898" for ::1 at 2023-04-24 15:38:00 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"898"}
+Completed 200 OK in 67ms (Views: 48.0ms | Allocations: 82379)
+
+
+Started GET "/dados/98999" for ::1 at 2023-04-24 15:38:03 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"98999"}
+Completed 200 OK in 226ms (Views: 0.7ms | Allocations: 1573)
+
+
+Started GET "/dados/256/grafico" for ::1 at 2023-04-24 15:38:10 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"256"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 3.5ms | Allocations: 3510)
+Completed 200 OK in 349ms (Views: 4.7ms | Allocations: 22447)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-24 15:38:13 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 44.6ms | Allocations: 92950)
+Completed 200 OK in 64ms (Views: 45.4ms | Allocations: 139703)
+
+
+Started GET "/dados/11/grafico" for ::1 at 2023-04-24 15:38:57 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 125.2ms | Allocations: 92556)
+Completed 200 OK in 139ms (Views: 126.6ms | Allocations: 139661)
+
+
+Started GET "/dados/256/grafico" for ::1 at 2023-04-24 15:39:02 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"256"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 2.3ms | Allocations: 3510)
+Completed 200 OK in 5ms (Views: 3.2ms | Allocations: 5587)
+
+
+Started GET "/dados/659/grafico" for ::1 at 2023-04-24 15:39:05 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"659"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 6.1ms | Allocations: 1606)
+Completed 200 OK in 635ms (Views: 8.5ms | Allocations: 11130)
+
+
