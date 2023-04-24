@@ -1,10 +1,43 @@
-<h1>Meu Gráfico</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<div>
-  <canvas id="meu-grafico"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="container">
+<h2 class="text-primary mb-4">Meu Gráfico</h2>
+<canvas id="meu-grafico"></canvas>
+  <div class="row">
+    <div class="col-md-12">
+    </div>
+    <div class="col-md-12">
+      <h2 class="text-primary mb-4">Tabela de Dados</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @dados_grafico[:labels].each_with_index do |data, index| %>
+              <tr>
+                <td class="font-weight-bold"><%= data %></td>
+                <td><%= @dados_grafico[:datasets][0][:data][index] %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
 
 <script>
   var ctx = document.getElementById('meu-grafico').getContext('2d');
@@ -15,9 +48,36 @@
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: true
+            beginAtZero: true,
+            fontColor: "#6c757d"
+          },
+          gridLines: {
+            color: "#dee2e6"
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: "#6c757d"
+          },
+          gridLines: {
+            color: "#dee2e6"
           }
         }]
+      },
+      legend: {
+        display: false
+      },
+      elements: {
+        line: {
+          borderWidth: 2,
+          borderColor: "#007bff",
+          pointRadius: 3,
+          pointBackgroundColor: "#007bff"
+        },
+        point: {
+          hitRadius: 10,
+          hoverRadius: 5
+        }
       }
     }
   });

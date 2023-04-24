@@ -16,7 +16,6 @@ gem "puma", "~> 5.0"
 # gem "jbuilder"
 
 gem 'httparty'
-
 gem 'redis'
 # gem 'sidekiq'
 
