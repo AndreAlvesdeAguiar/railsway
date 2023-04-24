@@ -1,15 +1,18 @@
 class DadosController < ApplicationController
-    def index
-      codigo_serie = params[:codigo_serie]
-      dados_json = $redis.get(codigo_serie)
-      if dados_json
-        render json: JSON.parse(dados_json)
-      else
-        render json: { error: 'Dados não encontrados no Redis' }, status: :not_found
-      end
+  def index
+    codigo_serie = params[:codigo_serie]
+    dados_json = $redis.get(codigo_serie)
+
+    if dados_json.nil?
+      dados = ApiService.busca_dados(codigo_serie)
+      dados_json = dados.to_json
+      $redis.set(codigo_serie, dados_json)
     end
+
+    render json: JSON.parse(dados_json)
   end
-  
+end
+
 
   #CONTROLLER EXCLUSIVO DO REDIS (VISUAL)
   # COMANDOS INTERESSANTES

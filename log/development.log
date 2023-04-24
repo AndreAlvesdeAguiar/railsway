@@ -748,3 +748,75 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 6596)
 
 
+Started GET "/dados/12" for ::1 at 2023-04-24 10:05:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"12"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 19486)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-04-24 10:05:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dados/7828" for ::1 at 2023-04-24 10:12:33 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"7828"}
+Completed 200 OK in 7ms (Views: 5.6ms | Allocations: 14218)
+
+
+Started GET "/dados/20714" for ::1 at 2023-04-24 10:13:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20714"}
+Completed 404 Not Found in 11ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 19530)
+
+
+Started GET "/dados/20714" for ::1 at 2023-04-24 10:13:20 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20714"}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 3886)
+
+
+Started GET "/dados/20714" for ::1 at 2023-04-24 10:16:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20714"}
+Completed 200 OK in 14ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 23280)
+
+
+Started GET "/dados/" for ::1 at 2023-04-24 10:16:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/dados"):
+  
+Started GET "/dados/20718" for ::1 at 2023-04-24 10:17:29 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20718"}
+Completed 404 Not Found in 1ms (Views: 0.2ms | Allocations: 118)
+
+
+Started GET "/dados/20718" for ::1 at 2023-04-24 10:19:35 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20718"}
+Completed 200 OK in 5ms (Views: 3.3ms | Allocations: 3850)
+
+
+Started GET "/dados/13621" for ::1 at 2023-04-24 10:23:08 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"13621"}
+Completed 404 Not Found in 0ms (Views: 0.1ms | Allocations: 112)
+
+
+Started GET "/dados/25359" for ::1 at 2023-04-24 10:30:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"25359"}
+Completed 200 OK in 2280ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 30103)
+
+
+Started GET "/dados/20717" for ::1 at 2023-04-24 10:30:28 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"20717"}
+Completed 200 OK in 537ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 11418)
+
+
