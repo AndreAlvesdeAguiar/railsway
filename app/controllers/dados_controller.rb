@@ -47,6 +47,11 @@ class DadosController < ActionController::Base
     render 'dados/grafico'
   end
 
+  # def get_significado(codigo_serie)
+  #   serie = Serie.find_by(codigo: codigo_serie)
+  #   serie.significado
+  # end
+  
 end
 
 

@@ -1,42 +1,68 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QLtZjHlPuUvWQq8ByF0MIVXQXj5E2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XT+3xgJmw96+FawjQzfml1KhNUppR66fPXG4nYbd2e3ZVP3HWZKjTUikSv8d+cz7pNJgPLuo9b7Vd+HI8Wk7jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chart.js/2.9.4/Chart.min.css" integrity="sha512-4jX9Baix4vbG4OQw3TqTUrjKik/pNk8cB+gF3qz3o90pMvty1xFK/P1LlkJmv43cTYeHrj+BKAb2y7nMG+jC+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<div class="container">
-<h2 class="text-primary mb-4">Meu Gráfico</h2>
-<canvas id="meu-grafico"></canvas>
-  <div class="row">
-    <div class="col-md-12">
-    </div>
-    <div class="col-md-12">
-      <h2 class="text-primary mb-4">Tabela de Dados</h2>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Data</th>
-              <th>Valor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @dados_grafico[:labels].each_with_index do |data, index| %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meu Gráfico</title>
+
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+    @media (max-width: 576px) {
+      .table-responsive.scrollable {
+        overflow-y: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-primary mb-4">Meu Gráfico</h2>         
+        <p>Código da série: <%= params[:codigo_serie] %> 
+        <canvas id="meu-grafico" style="max-height: 380px;"></canvas>
+        </div>
+      <div class="col-12">
+        <h2 class="text-primary mb-4">Tabela de Dados</h2>
+        <div class="table-responsive scrollable" style="max-height: 240px;">
+          <table class="table table-striped">
+            <thead>
               <tr>
-                <td class="font-weight-bold"><%= data %></td>
-                <td><%= @dados_grafico[:datasets][0][:data][index] %></td>
+                <th>Data</th>
+                <th>Valor</th>
               </tr>
-            <% end %>
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              <% @dados_grafico[:labels].each_with_index do |data, index| %>
+                <tr>
+                  <td class="font-weight-bold"><%= data %></td>
+                  <td><%= @dados_grafico[:datasets][0][:data][index] %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/1.1.1/chartjs-plugin-zoom.min.js"></script>
+
+
 
 <script>
   var ctx = document.getElementById('meu-grafico').getContext('2d');
@@ -60,6 +86,14 @@
           },
           gridLines: {
             color: "#dee2e6"
+          },
+          type: 'time',
+          time: {
+            tooltipFormat: 'll',
+            unit: 'day',
+            displayFormats: {
+              day: 'MMM D'
+            }
           }
         }]
       },
@@ -76,6 +110,32 @@
         point: {
           hitRadius: 10,
           hoverRadius: 5
+        }
+      },
+      tooltips: {
+        callbacks: {
+          title: function(tooltipItem, data) {
+            return moment(tooltipItem[0].xLabel).format('ll');
+          },
+          label: function(tooltipItem, data) {
+            return tooltipItem.yLabel;
+          }
+        }
+      },
+      plugins: {
+        zoom: {
+          zoom: {
+            wheel: {
+              enabled: true
+            },
+            drag: {
+              enabled: true
+            },
+            pinch: {
+              enabled: true
+            },
+            mode: 'xy'
+          }
         }
       }
     }
