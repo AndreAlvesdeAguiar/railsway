@@ -4916,3 +4916,58 @@ Processing by DadosController#grafico as HTML
 Completed 200 OK in 162ms (Views: 77.0ms | ActiveRecord: 0.0ms | Allocations: 159867)
 
 
+Started GET "/dados/11/grafico" for ::1 at 2023-04-25 16:48:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"11"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 163.1ms | Allocations: 112129)
+Completed 200 OK in 186ms (Views: 167.9ms | ActiveRecord: 0.0ms | Allocations: 164470)
+
+
+Started GET "/dados/456/grafico" for ::1 at 2023-04-25 16:48:42 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"456"}
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms | Allocations: 3881)
+
+
+  
+NoMethodError (undefined method `each' for "<?xml version=\"1.0\" encoding=\"pt-br\"?>\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\r\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-br\" xml:lang=\"pt-br\">\r\n<head>\r\n<title>Requisição inválida!</title>\r\n<link rev=\"made\" />\r\n<style>\r\n\ta:link    {color:#0036D7; text-decoration: none;}\t\t/* #4D749F */\r\n\ta:hover   {color:#3366ff;}\r\n\ta:active  {color:#0036D7;}\r\n\ta:link\t  {color:#0036D7;}\r\n\ta:visited {color:#AF8C3A; text-decoration: none;}\r\n</style>\r\n\r\n</head>\r\n\r\n<body style=\"margin:0;\" class=\"semTemplate\">\r\n\t<table border=\"0\" width=\"100%\"  cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t<tr>\r\n\t\t\t<td height=\"23\" colspan=\"6\" align=\"left\" valign=\"top\" bgcolor=\"#FFCC00\"><img src=\"/local_img/home/logo_faz2.gif\" width=\"177\" height=\"23\" alt=\"Ministério da Fazenda\"></td>\r\n\t\t\t<td bgcolor=\"#FFCC00\" align=\"right\"><img src=\"/local_img/home/brasil2.gif\" border=\"\"0 width=\"74\" height=\"21\" alt=\"Acesse o Portal do Governo Brasileiro\"></td>\r\n\t\t</tr>\r\n\t\t<tr bgcolor=\"#003d79\">\r\n\t\t\t<td height=\"40\" colspan=\"7\" align=\"left\" valign=\"top\" style=\"vertical-align:middle\"><a href=\"http://www.bcb.gov.br\" alt=\"Página inicial\"><img src=\"/local_img/logobacen_transp.gif\" border=\"0\" width=\"165\" height=\"35\" alt=\"Página inicial\"></a></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td width=\"194\" rowspan=\"4\" align=\"left\" valign=\"top\" bgcolor=\"#E5E9ED\">&nbsp;</td>\r\n\t\t\t<td height=\"40\" colspan=\"6\" align=\"left\" valign=\"top\"><img src=\"/local_img/transparent.gif\" width=\"1\" height=\"40\"></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td width=\"20\" rowspan=\"2\" align=\"left\" valign=\"top\"><img src=\"/local_img/transparent.gif\" width=\"20\" height=\"20\"></td>\r\n\t\t\t<td width=\"301\">&nbsp;</td>\r\n\t\t\t<td width=\"50\" rowspan=\"2\" valign=\"top\"><img src=\"/local_img/transparent.gif\" width=\"50\" height=\"1\"></td>\r\n\t\t\t<td width=\"301\" valign=\"top\">&nbsp;</td>\r\n\t\t\t<td rowspan=\"2\" align=\"left\" valign=\"top\">&nbsp;</td>\r\n\t\t</tr>\r\n      <tr>\r\n\t\t\t<td height=\"250\" valign=\"top\">\r\n\t\t\t\t\t<!--INICIO TABELA PORTUGUÊS-->\r\n\t\t\t\t\t<table  border=\"0\" style=\"border:solid 2 #4a73a2\" width=\"330\" height=\"185\" align=\"right\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td height=\"4\" colspan=\"3\" valign=\"top\" bgcolor=\"#F2F4F6\">&nbsp;</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td height=\"4\" width=\"6\" align=\"right\" valign=\"middle\" bgcolor=\"#003d79\"></td>\r\n\t\t\t\t\t\t\t<td height=\"19\" valign=\"top\" bgcolor=\"#003d79\"><font size=\"2\" color=\"white\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>Requisi&ccedil;&atilde;o Inv&aacute;lida!</strong></font></td>\r\n\t\t\t\t\t\t\t<td height=\"4\" valign=\"top\" bgcolor=\"#003d79\">&nbsp;</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr bgcolor=\"#F2F4F6\">\r\n\t\t\t\t\t\t\t<td width=\"14\" rowspan=\"3\" valign=\"top\"></td>\r\n\t\t\t\t\t\t\t<td width=\"243\" height=\"98\" align=\"left\" valign=\"middle\" bgcolor=\"#F2F4F6\">\r\n\t\t\t\t\t\t\t\t<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">\r\n\t\t\t\t\t\t\t\t      Seu \"browser\" (ou o servidor proxy) enviou uma\r\n    requisição inválida ao servidor.\r\n\t\t\t\t\t\t\t\t</font>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t<td width=\"20\" rowspan=\"3\" valign=\"top\">&nbsp;</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td colspan=\"3\" align=\"left\" height=\"22\" valign=\"top\" bgcolor=\"#F2F4F6\" style=\"text-indent:20;\">\r\n\t\t\t\t\t\t\t\t<a href=\"javascript:history.back();\"><img src=\"/local_img/fundoazul/a_anter.gif\" border=\"0\" alt=\"Volta à página anterior\"><br><font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">&nbsp;</font></a><a href=\"http://www.bcb.gov.br/\"><img src=\"/local_img/home.gif\" border=\"0\" alt=\"Volta à página inicial da homepage\"><font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\"></font></a>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td colspan=\"3\" align=\"left\" height=\"22\" valign=\"top\" bgcolor=\"#F2F4F6\">&nbsp;</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t\t<!--FIM TABELA PORTUGUÊS-->\r\n\t\t\t\t</td>\t\r\n\t\t\t\t<td width=\"301\" valign=\"top\">\r\n\t\t\t\t\t<!--INICIO TABELA INGLÊS-->\r\n\t\t\t\t\t<table border=\"0\" width=\"330\" height=\"185\" style=\"border:solid 2 #4a73a2\" align=\"left\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td height=\"19\" colspan=\"3\" valign=\"top\" bgcolor=\"#F2F4F6\"></td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td height=\"19\" width=\"30\" align=\"right\" valign=\"middle\" bgcolor=\"#003d79\"></td>\r\n\t\t\t\t\t\t\t<td height=\"19\" valign=\"top\" bgcolor=\"#003d79\"><font size=\"2\" color=\"white\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>Bad request!</strong></font></td>\r\n\t\t\t\t\t\t\t<td height=\"19\" valign=\"top\" bgcolor=\"#003d79\"><img src=\"/local_img/transparent.gif\" width=\"20\" height=\"20\"></td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr bgcolor=\"#F2F4F6\">\r\n\t\t\t\t\t\t\t<td width=\"14\" rowspan=\"3\" valign=\"top\"></td>\r\n\t\t\t\t\t\t\t<td width=\"243\" height=\"99\" align=\"left\" valign=\"middle\" bgcolor=\"#F2F4F6\"><font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">    Your browser (or proxy) sent a request that\r\n    this server could not understand.\r\n    </font></td>\r\n\t\t\t\t\t\t\t<td width=\"20\" rowspan=\"3\" valign=\"top\">&nbsp;</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td colspan=\"3\" align=\"left\" height=\"22\" valign=\"top\" bgcolor=\"#F2F4F6\" style=\"text-indent:50;\">\r\n\t\t\t\t\t\t\t\t<a href=\"javascript:history.back();\"><img src=\"/local_img/fundoazul/a_anter.gif\" border=\"0\" alt=\"Back to last page visited\"><font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\"></font></a><a href=\"http://www.bcb.gov.br/?english\"><br><img src=\"/local_img/home.gif\" border=\"0\" alt=\"Back to Banco Central's main page\"><font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\"></font></a>\r\n\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t<tr bgcolor=\"#F2F4F6\">\r\n\t\t\t\t\t\t\t<td height=\"18\" colspan=\"3\" valign=\"top\"></td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t\t<!--FIM TABELA INGLÊS-->\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t<tr>\r\n\t<td></td>\r\n\t<td colspan=\"4\" style=\"border-top-color:#003d79;border-top-width:1;border-top-style:solid;\">\r\n\t\t<font size=\"2\" color=\"red\" face=\"Verdana, Arial, Helvetica, sans-serif\">\r\n\t\t\tA sua requisição foi rejeitada. <br>O código de erro é: 6493123874488513577<br><br>Caso necessite de ajuda entre em contato com a Central de Atendimento do Banco Central: +55 61 3414-2156.<br><br><a href='javascript:history.back();'>[Go Back]\r\n         <address>\r\n         \r\n         <span><!--#config timefmt=\"%c\" --><!--# echo var=\"date_local\" default=\"-\" --><br />\r\n         </span>\r\n         </address>\t\t\r\n         </font>\r\n\t</td>\r\n\t</tr>\r\n\t</table>\r\n\r\n</body>\r\n</html>":String):
+  
+app/controllers/dados_controller.rb:29:in `grafico'
+Started GET "/dados//grafico" for ::1 at 2023-04-25 16:48:48 -0300
+Processing by DadosController#index as HTML
+  Parameters: {"codigo_serie"=>"grafico"}
+Completed 500 Internal Server Error in 478ms (ActiveRecord: 0.0ms | Allocations: 954)
+
+
+  
+Encoding::UndefinedConversionError ("\xE9" from ASCII-8BIT to UTF-8):
+  
+app/services/api_service.rb:13:in `busca_dados'
+app/controllers/dados_controller.rb:7:in `index'
+Started GET "/dados/17/grafico" for ::1 at 2023-04-25 16:48:54 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"17"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 68.2ms | Allocations: 100282)
+Completed 200 OK in 90ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 142388)
+
+
+Started GET "/dados/265/grafico" for ::1 at 2023-04-25 16:48:59 -0300
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"265"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 6.8ms | Allocations: 11582)
+Completed 200 OK in 574ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 62534)
+
+
+Started GET "/dados/12/grafico" for ::1 at 2023-04-26 00:14:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DadosController#grafico as HTML
+  Parameters: {"codigo_serie"=>"12"}
+  Rendering dados/grafico.html.erb
+  Rendered dados/grafico.html.erb (Duration: 107.4ms | Allocations: 112631)
+Completed 200 OK in 143ms (Views: 116.1ms | ActiveRecord: 0.0ms | Allocations: 165185)
+
+

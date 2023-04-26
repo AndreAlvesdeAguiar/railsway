@@ -50,6 +50,7 @@ class DadosController < ActionController::Base
   # def get_significado(codigo_serie)
   #   serie = Serie.find_by(codigo: codigo_serie)
   #   serie.significado
+  # https://www3.bcb.gov.br/sgspub/consultarmetadados/consultarMetadadosSeries.do?method=consultarMetadadosSeriesInternet&hdOidSerieSelecionada=12
   # end
   
 end
